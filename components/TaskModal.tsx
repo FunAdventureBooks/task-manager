@@ -109,7 +109,7 @@ export default function TaskModal({
               <select
                 className={inputClass}
                 value={form.priority}
-                onChange={(e) => setForm({ ...form, priority: e.target.value })}
+                onChange={(e) => setForm({ ...form, priority: e.target.value as Priority })}
               >
                 {PRIORITIES.map((p) => (
                   <option key={p} value={p}>{p}</option>
@@ -121,7 +121,7 @@ export default function TaskModal({
               <select
                 className={inputClass}
                 value={form.owner}
-                onChange={(e) => setForm({ ...form, owner: e.target.value })}
+                onChange={(e) => setForm({ ...form, owner: e.target.value as Owner })}
               >
                 {OWNERS.map((o) => (
                   <option key={o} value={o}>{o}</option>
@@ -133,7 +133,7 @@ export default function TaskModal({
               <select
                 className={inputClass}
                 value={form.status}
-                onChange={(e) => setForm({ ...form, status: e.target.value })}
+                onChange={(e) => setForm({ ...form, status: e.target.value as Status })}
               >
                 {STATUSES.map((s) => (
                   <option key={s} value={s}>{STATUS_LABELS[s]}</option>
