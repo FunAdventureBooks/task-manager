@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
+
+:root {
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+  --bg-page: #F7F5F0;
+  --bg-card: #FFFFFF;
+  --bg-header: #FAFAF8;
+  --border-light: #E8E4DC;
+  --border-input: #E0DCD4;
+  --text-primary: #1a1a1a;
+  --text-muted: #888;
+  --text-faint: #BBB;
+  --accent-dark: #2C2C2C;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-page);
+  color: var(--text-primary);
+}
